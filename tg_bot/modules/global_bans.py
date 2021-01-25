@@ -53,7 +53,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
     user_id, reason = extract_user_and_text(message, args)
 
     if not user_id:
-        message.reply_text("You don't seem to be referring to a user.")
+        message.reply_text("You don't seem to be referring to a user. Who is this person?.")
         return
 
     if int(user_id) in SUDO_USERS:
